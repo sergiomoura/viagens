@@ -1,0 +1,146 @@
+/* Inclusão de fontes */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+/* Normalizando documento */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato',sans-serif;
+}
+
+header {
+	background-image: url(../images/header.jpg);
+	background-size: 1900px auto;
+	background-position: center -300px;
+	background-repeat: no-repeat;
+	color: #FFF;
+	height: 650px;
+	font-size: 64px;
+	line-height: 650px;
+	text-align: center;
+	text-shadow: 0px 0px 5px rgba(0,0,0,1)
+}
+
+/* nav início */
+	nav {
+		background-color: blueviolet;
+		position: sticky;
+		top: 0;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+		padding: 0 100px;
+		z-index: 2;
+	}
+	nav ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 960px;
+		margin: 0 auto;
+	}
+	nav ul li {
+		display: inline-block;
+	}
+	nav ul li a {
+		display: inline-block;
+		padding: 10px 20px;
+		text-decoration: none;
+		font-size: 18px;
+		color:#FFF;
+		line-height: 40px;
+
+	}
+	nav ul li .ativo {
+		background-color: #cb93ff;
+		color: black;
+	}
+/* nav fim*/
+
+main{
+	z-index: 1;
+	width: 960px;
+	margin: 20px auto;
+}
+
+main .chamadas{
+	display: flex;
+}
+
+main .chamadas article{
+	float: left;
+	width: 300px;
+	text-align: center;
+	background-color: #E0E0E0;
+	border-radius: 20px;
+	padding: 20px;
+	margin:0 30px 0 0;
+}
+
+main .chamadas article:last-child{
+	margin:0 0 0 0;
+}
+
+main .chamadas article img{
+	width: 64px;
+}
+
+main .depoimentos {
+	margin: 30px;
+}
+
+main .depoimentos article{
+	font-style: italic;
+	text-align: center;
+	font-size: 24px;
+	margin: 0 0 40px 0;
+	position: relative;
+}
+
+main .depoimentos article div{
+	text-align: right;
+	font-size: 16px;
+	margin: 10px 0 0 0;
+}
+
+/* footer início */
+footer{
+	background-color: blueviolet;
+	color: #FFF;
+	padding: 20px;
+	height: 86px;
+	overflow: hidden;
+}
+
+footer div{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+footer div .redes{
+	float: left;
+}
+
+footer div .redes a{
+	border: none;
+	display: inline-block;
+}
+
+footer div .redes a img{
+	width:48px;
+}
+
+footer div .endereco{
+	float: right;
+}
+
+footer div .copyright{
+	position: absolute;
+	right: 0;
+	top:14px;
+}
+/* footer fim*/
